@@ -14,17 +14,18 @@ Procedure
    this should be under <build> 
    ```sh 
      <plugins>
-     <plugin>
-   			<groupId>org.apache.tomcat.maven</groupId>
-   			<artifactId>tomcat7-maven-plugin</artifactId>
-   			<version>2.2</version>
-   	  	<configuration>
-      		<url>http://localhost:8080/manager/text</url>
-      		<server>TomcatServer</server>
-      		<path>/helloworld-webapp</path>
-   		  </configuration>
+        <plugin>
+                        <groupId>org.apache.tomcat.maven</groupId>
+                        <artifactId>tomcat7-maven-plugin</artifactId>
+                        <version>2.2</version>
+                <configuration>
+                <url>http://35.172.220.12:8090/manager/text</url>
+                <server>TomcatServer</server>
+                <path>/third-maven-project</path>
+                  </configuration>
      </plugin>
-     </plugins>
+           <plugin>
+
    ```
 
 1. create settings.xml for credentials 
